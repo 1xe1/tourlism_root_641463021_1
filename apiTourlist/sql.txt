@@ -1,0 +1,28 @@
+-- a. สถานที่ท่องเที่ยว
+CREATE TABLE TouristPlaces (
+    PlaceID INT,
+    PlaceName VARCHAR(255) NOT NULL,
+    Description TEXT,
+    Latitude DOUBLE,
+    Longitude DOUBLE
+);
+
+-- b. ประเภทร้านค้า
+CREATE TABLE StoreTypes (
+    TypeID INT,
+    TypeName VARCHAR(255) NOT NULL
+);
+
+-- c. ชื่อร้านค้า
+CREATE TABLE StoreNames (
+    StoreID INT,
+    StoreName VARCHAR(255) NOT NULL,
+    TypeID INT
+);
+
+-- d. ตารางการเดินรถ
+CREATE TABLE BusSchedule (
+    ScheduleID INT,
+    Time TIME,
+    PlaceID INT
+);
